@@ -48,7 +48,20 @@ a {
 }
 
 /* Main Header */
+.search-btn{
+    width: 110px;
+    border: 1px solid darkseagreen;
+    font-size: 18px;
+    color: cadetblue;
+}
 
+.search-img{
+    width:15px;
+    height: 15px;
+}
+.srch{
+    display: none;
+}
 .main-header {
     position: fixed;
     top: 0;

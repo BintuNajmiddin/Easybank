@@ -40,3 +40,7 @@
 .icon-instagram:before {
   content: "\e90a";
 }
+.icon-search:before {
+  content: "\e986";
+}
+

@@ -25,6 +25,7 @@
         <div class="container">
             <div class="row">
                 <a href="#" class="logo"><img src="img/logo.svg" alt="Easybank logo"></a>
+                <button class="search-btn" onclick="searchToggle()" type="button"> Search</button>   
                 <button class="menu-toggle open" onclick="openMenu()"><img src="img/menu.svg" alt=""></button>
                 <button class="menu-toggle close" onclick="closeMenu()"><img src="img/close.svg" alt=""></button>
                 <nav id="mainnav" class="main-nav">
@@ -34,6 +35,10 @@
                     <a href="#" class="main-nav-link">Blog</a>
                     <a href="#" class="main-nav-link">Careers</a>
                 </nav>
+                <div class="srch">
+                    <input type="text" placeholder="search" class="search-input">
+                    <img class="search-img" src="img/search.png" alt="search">
+                 </div>
                 <button type="button" class="btn" onclick="openModal()">Request Invite</button>
             </div>
         </div>
@@ -196,7 +201,8 @@
 
         const menu = document.getElementById('mainnav');
         const header = document.getElementById('mainHeader');
-
+        const lupa = document.getElementsByClassName('srch');
+       
         function openMenu() {
             menu.style.display = 'block';
             header.classList = 'main-header on';
@@ -215,6 +221,16 @@
 
         function closeModal() {
             modal.style.display = 'none';
+        }
+
+
+        function searchToggle(){
+            if(lupa[0].style.display == 'block'){
+                lupa[0].style.display = 'none'
+            }else{
+                lupa[0].style.display = 'block'
+            }
+            
         }
 
     </script>
